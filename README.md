@@ -1,14 +1,3 @@
----
-title: Laya Ignite
-emoji: 🔥
-colorFrom: red
-colorTo: yellow
-sdk: gradio
-app_file: app.py
-pinned: false
-license: apache-2.0
-short_description: Zero-Shot to System-1 Decision Bootstrap Engine (Sub-35ms Laya inference)
----
 
 <div align="center">
 
