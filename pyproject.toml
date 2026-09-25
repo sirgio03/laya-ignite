@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "laya-ignite"
+version = "0.1.0"
+description = "🔥 Zero-Shot to System-1 Decision Bootstrap Engine for Laya"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Siradj Mounir Lamri", email = "141422129+sirgio03@users.noreply.github.com" }
+]
+keywords = [
+    "laya",
+    "system-1",
+    "synthetic-data",
+    "few-shot",
+    "zero-shot",
+    "inference",
+    "decision-models",
+    "fine-tuning"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "pydantic>=2.0.0",
+    "rich>=13.0.0",
+    "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+ui = ["gradio>=4.0.0"]
+hf = ["huggingface_hub>=0.20.0", "transformers>=4.40.0"]
+openai = ["openai>=1.0.0"]
+all = [
+    "gradio>=4.0.0",
+    "huggingface_hub>=0.20.0",
+    "transformers>=4.40.0",
+    "openai>=1.0.0"
+]
+
+[project.scripts]
+laya-ignite = "laya_ignite.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["laya_ignite*"]
