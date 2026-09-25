@@ -7,12 +7,19 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Laya Compatible](https://img.shields.io/badge/compatible%20with-Laya%20AI-orange.svg)](https://github.com/NandhaKishorM/laya)
+[![Official Discussion](https://img.shields.io/badge/Official%20Discussion-%23495-blueviolet?logo=github)](https://github.com/NandhaKishorM/laya/discussions/495)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/sirgio03/laya-ignite/pulls)
 [![Sub-35ms](https://img.shields.io/badge/Inference-Sub--35ms-brightgreen.svg)](#)
 
 *From zero-shot criteria definitions to calibrated, specialized sub-35ms Laya decision heads in under 45 seconds.*
 
-[Philosophy](#-why-i-built-this--the-philosophy) • [Quickstart](#-quickstart) • [Local vs Cloud](#-100-local-or-multi-provider-cloud) • [Community Benchmarks](#-community-hardware-benchmark-matrix) • [Contributing](#-contributing--pull-requests-welcome)
+<br>
+
+📢 **Official Laya Discussion:** [Laya-Ignite Zero-Shot to System-1 Decision Bootstrap Engine (Local Ollama & Cloud APIs) · NandhaKishorM/laya · Discussion #495](https://github.com/NandhaKishorM/laya/discussions/495)
+
+<br>
+
+[Official Discussion #495](https://github.com/NandhaKishorM/laya/discussions/495) • [Philosophy](#-why-i-built-this--the-philosophy) • [Quickstart](#-quickstart) • [Local vs Cloud](#-100-local-or-multi-provider-cloud) • [Community Benchmarks](#-community-hardware-benchmark-matrix) • [Contributing](#-contributing--pull-requests-welcome)
 
 </div>
 
@@ -28,7 +35,7 @@ However, anyone building real-world applications with Laya faces two immediate c
 1. **The Cold-Start Dilemma:** Without hundreds of labeled training examples for your specific domain, zero-shot base models hover near chance on complex domain routing.
 2. **The Negation Blindspot ([Issue #377](https://github.com/NandhaKishorM/laya/issues/377)):** Standard zero-shot classification often gets trapped by keywords — misclassifying phrases like *"Do NOT cancel my account"* or *"I am NOT asking for a refund"*.
 
-Developers usually resolve this by either spending weeks manually labeling data or reverting to slow, expensive generative LLM calls (>800ms) on every user request.
+Developers usually resolve this by either spending weeks manually labeling data or reverting to slow, expensive generative LLM calls (>800ms) on every user request. Furthermore, as demonstrated in [Discussion #347](https://github.com/NandhaKishorM/laya/discussions/347), while training Laya on custom tasks enables it to beat commercial alternatives (like TypeSafe Jev) in accuracy, uncalibrated training causes severe overconfidence where Expected Calibration Error ($ECE$) spikes up to 0.25.
 
 ### The Dual-Process Principle
 **Laya-Ignite bridges this gap.** 
@@ -177,8 +184,8 @@ The script will detect your hardware, run multi-batch forward passes, measure fr
 | **Apple Silicon M1 / M2 (Base)** | MPS | *~18.0s (target)* | *~22.0 ms (target)* | *~68.0 ms (target)* | *<0.06* | ⏳ **[PR / Data Welcome]** |
 | **NVIDIA A100 (80GB)** | CUDA / TensorRT | *~2.1s (target)* | *~3.8 ms (target)* | *~8.5 ms (target)* | *<0.04* | ⏳ **[PR / Data Welcome]** |
 
-> **How to submit your numbers:** 
-> Copy the terminal summary from `python benchmark_gpu.py` and open a Pull Request updating this table, or paste it in a [GitHub Discussion](https://github.com/sirgio03/laya-ignite/discussions)! We will credit your GitHub handle in the table.
+> 💬 **Submit Your Numbers:**  
+> Copy the terminal summary from `python benchmark_gpu.py` and drop it directly in **[Laya Discussion #495](https://github.com/NandhaKishorM/laya/discussions/495)**, or open a Pull Request updating this matrix! We will credit your GitHub handle in the table.
 
 ---
 
