@@ -3,6 +3,10 @@ Example 02: Resolving Laya's Negation Blindspot (Issue #377).
 Demonstrates how synthetic hard-negatives immunize Laya against keyword collision traps.
 """
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from laya_ignite.schema import validate_question_bundle
 from laya_ignite.synthesizer import create_generator, synthesize_dataset
 

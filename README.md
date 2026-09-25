@@ -139,6 +139,18 @@ print(decision.answers["support_team"].confidence)   # 0.98 (Calibrated!)
 print(decision.answers["is_urgent"].noul)            # 0.94
 ```
 
+### 3. Standalone Runnable Examples
+
+Check out the full runnable scripts in [`examples/`](examples/):
+* **[`examples/01_ticket_routing.py`](examples/01_ticket_routing.py):** Fast multi-class enterprise ticket routing.
+* **[`examples/02_anti_negation_demo.py`](examples/02_anti_negation_demo.py):** Resolving the Negation Blindspot ([Issue #377](https://github.com/NandhaKishorM/laya/issues/377)) with adversarial hard-negatives.
+* **[`examples/03_darja_routing.py`](examples/03_darja_routing.py):** Sub-35ms decision routing for low-resource dialectal Arabic & Arabizi (Algerian Darja 🇩🇿), unlocking models for non-standard dialects.
+
+```bash
+# Run the Darja routing benchmark directly:
+python examples/03_darja_routing.py
+```
+
 ---
 
 ## 🔒 100% Local or Multi-Provider Cloud
