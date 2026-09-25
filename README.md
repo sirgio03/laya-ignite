@@ -12,7 +12,7 @@ short_description: Zero-Shot to System-1 Decision Bootstrap Engine (Sub-35ms Lay
 
 <div align="center">
 
-<img src="assets/laya_ignite_banner.png" width="680" alt="Laya-Ignite Logo">
+<img src="https://raw.githubusercontent.com/sirgio03/laya-ignite/main/assets/laya_ignite_banner.png" width="680" alt="Laya-Ignite Logo">
 
 <br>
 
