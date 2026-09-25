@@ -4,7 +4,11 @@
 
 from typing import Dict, Any, Optional
 import os
-import laya
+
+try:
+    import laya
+except ImportError:
+    laya = None
 
 from .schema import validate_question_bundle
 from .synthesizer import create_generator, synthesize_dataset
@@ -22,7 +26,7 @@ def bootstrap(
     model_name: str = "english",
     device: Optional[str] = None,
     **generator_kwargs
-) -> laya.Agent:
+) -> Any:
     """
     One-line bootstrap: converts cold-start questions into a specialized, calibrated Laya agent.
 
