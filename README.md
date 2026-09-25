@@ -96,15 +96,17 @@ Features:
 
 ---
 
-## 📊 Benchmark: Base Laya vs. Laya-Ignite
+## 📊 Target Benchmark: Base Laya vs. Laya-Ignite
 
-| Metric | Base Laya (Zero-Shot) | Laya-Ignite (Adapted in 30s) |
+> *Note: Base Laya numbers are measured from Laya's official `typed-decisions` benchmark and Issue #377. Laya-Ignite metrics represent preliminary target projections; empirical evaluation suite is currently in progress.*
+
+| Metric | Base Laya (Zero-Shot - Measured) | Laya-Ignite (Target Projection) |
 | :--- | :--- | :--- |
-| **Enterprise Task Accuracy** | ~35.2% (near chance) | **81.4%** |
-| **Negation Accuracy** | ~20.0% (fails on "not") | **94.8%** |
-| **Expected Calibration Error (ECE)** | 0.314 (Over-confident) | **0.068** (Well-calibrated) |
-| **Inference Latency** | 35 ms | **35 ms** (Unchanged!) |
-| **Manual Data Labeling Required** | 1,000+ rows by hand | **0 rows** (Automated) |
+| **Enterprise Task Accuracy** | ~35.2% (near chance) | ~80%+ |
+| **Negation Accuracy** | ~20.0% (fails on "not", Issue #377) | ~90%+ |
+| **Expected Calibration Error (ECE)** | 0.314 (Over-confident) | <0.080 (Target calibrated) |
+| **Inference Latency** | 35 ms | 35 ms (Unchanged) |
+| **Manual Data Labeling Required** | 1,000+ rows by hand | 0 rows (Automated) |
 
 ---
 
