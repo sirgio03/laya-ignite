@@ -20,16 +20,18 @@ console = Console()
 
 def create_generator(generator_type: str = "mock", **kwargs) -> BaseGenerator:
     """Factory to instantiate the chosen generator backend."""
-    gen = generator_type.lower()
+    gen = generator_type.lower().strip()
     if gen == "mock":
         return MockGenerator()
-    elif "ollama" in gen:
-        model = gen.split("/", 1)[1] if "/" in gen else "qwen2.5:3b"
+    elif gen.startswith("ollama"):
+        model = generator_type.split("/", 1)[1] if "/" in generator_type else "qwen2.5:3b"
         return OllamaGenerator(model=model, **kwargs)
-    elif gen in ("openai", "huggingface", "api"):
-        return APILLMGenerator(**kwargs)
+    elif "/" in generator_type:
+        provider, model = generator_type.split("/", 1)
+        return APILLMGenerator(provider=provider, model=model, **kwargs)
+    elif gen in ("openai", "groq", "deepseek", "openrouter", "huggingface"):
+        return APILLMGenerator(provider=gen, **kwargs)
     else:
-        # Default to OpenAI-compatible
         return APILLMGenerator(model=generator_type, **kwargs)
 
 
