@@ -1,3 +1,15 @@
+---
+title: Laya Ignite
+emoji: 🔥
+colorFrom: red
+colorTo: yellow
+sdk: gradio
+app_file: app.py
+pinned: false
+license: apache-2.0
+short_description: Zero-Shot to System-1 Decision Bootstrap Engine (Sub-35ms Laya inference)
+---
+
 <div align="center">
 
 <img src="assets/laya_ignite_banner.png" width="680" alt="Laya-Ignite Logo">
@@ -7,6 +19,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Laya Compatible](https://img.shields.io/badge/compatible%20with-Laya%20AI-orange.svg)](https://github.com/NandhaKishorM/laya)
+[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-Live%20Demo-orange)](https://huggingface.co/spaces/Lamri26/laya-ignite)
 [![Official Discussion](https://img.shields.io/badge/Official%20Discussion-%23495-blueviolet?logo=github)](https://github.com/NandhaKishorM/laya/discussions/495)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/sirgio03/laya-ignite/pulls)
 [![Sub-35ms](https://img.shields.io/badge/Inference-Sub--35ms-brightgreen.svg)](#)
