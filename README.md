@@ -1,10 +1,8 @@
 <div align="center">
 
-<img src="assets/laya_ignite_logo.jpg" width="220" alt="Laya-Ignite Logo" style="border-radius: 24px; box-shadow: 0 8px 30px rgba(108, 99, 255, 0.3);">
+<img src="assets/laya_ignite_banner.png" width="650" alt="Laya-Ignite Logo">
 
-# 🔥 Laya-Ignite
-
-### Zero-Shot to System-1 Decision Bootstrap Engine
+<br>
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
