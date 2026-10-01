@@ -21,6 +21,7 @@ short_description: Zero-Shot to System-1 Decision Bootstrap Engine (Sub-35ms Lay
 [![Laya Compatible](https://img.shields.io/badge/compatible%20with-Laya%20AI-orange.svg)](https://github.com/NandhaKishorM/laya)
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-Live%20Demo-orange)](https://huggingface.co/spaces/Lamri26/laya-ignite)
 [![Official Discussion](https://img.shields.io/badge/Official%20Discussion-%23495-blueviolet?logo=github)](https://github.com/NandhaKishorM/laya/discussions/495)
+[![Merged in Laya v0.3.22](https://img.shields.io/badge/Laya%20Core-PR%20%23387%20Merged-success.svg)](https://github.com/NandhaKishorM/laya/pull/387)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/sirgio03/laya-ignite/pulls)
 [![Sub-35ms](https://img.shields.io/badge/Inference-Sub--35ms-brightgreen.svg)](#)
 
